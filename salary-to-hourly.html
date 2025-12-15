@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salary to Hourly Calculator | Simple Calculators</title>
+  <meta name="description" content="Convert your annual salary into hourly pay with taxes and PTO taken into account.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="index.html" class="logo">Simple Calculators</a>
+   <div class="nav-links">
+  <a href="salary-to-hourly.html">Salary</a>
+  <a href="freelance-rate.html">Freelance</a>
+  <a href="rent-split.html">Rent</a>
+  <a href="budget-calculator.html">Budget</a>
+  <a href="basic-calculator.html">Basic</a>
+</div>
+  </div>
+</nav>
+
+
+  <header class="site-header">
+    <h1>Salary to Hourly Calculator</h1>
+    <p>Convert your annual salary into an hourly rate</p>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <label>
+        Annual Salary ($)
+        <input type="number" id="salary" placeholder="e.g. 60000">
+      </label>
+
+      <label>
+        Hours per Week
+        <input type="number" id="hours" value="40">
+      </label>
+
+      <label>
+        Weeks per Year
+        <input type="number" id="weeks" value="52">
+      </label>
+
+      <button onclick="calculateHourly()">Calculate</button>
+
+      <h2 id="result"></h2>
+
+        <label>
+  Estimated Tax Rate (%)
+  <input type="number" id="tax" value="25">
+</label>
+
+<label>
+  Paid Weeks Off
+  <input type="number" id="pto" value="2">
+</label>
+
+    </section>
+
+    <section class="info">
+      <h3>How this works</h3>
+      <p>
+        This calculator divides your annual salary by the total number of hours
+        you work in a year to estimate your hourly wage.
+      </p>
+    </section>
+
+      <section class="info">
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>How do you calculate hourly pay from salary?</h3>
+  <p>We divide your annual salary by total working hours per year, adjusted for taxes and PTO.</p>
+
+  <h3>Does this include taxes?</h3>
+  <p>Yes. Enter an estimated tax rate to see your real take-home hourly pay.</p>
+
+  <h3>Other useful tools:</h3>
+  <p>
+    Freelancers can use the <a href="freelance-rate.html">Freelance Rate Calculator</a>.<br>
+    Plan your finances with the <a href="budget-calculator.html">Budget Calculator</a>.
+  </p>
+</section>
+
+
+  </main>
+
+  <script src="js/salary.js"></script>
+</body>
+</html>

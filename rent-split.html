@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rent Split Calculator | Simple Calculators</title>
+  <meta name="description" content="Split rent fairly between roommates with this simple calculator.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Simple Calculators</a>
+    <div class="nav-links">
+  <a href="salary-to-hourly.html">Salary</a>
+  <a href="freelance-rate.html">Freelance</a>
+  <a href="rent-split.html">Rent</a>
+  <a href="budget-calculator.html">Budget</a>
+  <a href="basic-calculator.html">Basic</a>
+</div>
+    </div>
+  </nav>
+
+  <header class="site-header">
+    <h1>Rent Split Calculator</h1>
+    <p>Split rent evenly between roommates</p>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <label>
+        Total Monthly Rent ($)
+        <input type="number" id="rent" placeholder="e.g. 2400">
+      </label>
+
+      <label>
+        Number of Roommates
+        <input type="number" id="people" placeholder="e.g. 3">
+      </label>
+
+      <button onclick="splitRent()">Calculate</button>
+
+      <h2 id="result"></h2>
+    </section>
+
+      <section class="info">
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>How is rent divided?</h3>
+  <p>We divide total rent by the number of roommates for a fair split.</p>
+
+  <h3>Can I add utilities?</h3>
+  <p>You can manually include utilities in total rent before calculation.</p>
+
+  <h3>Other useful tools:</h3>
+  <p>
+    Check your savings with the <a href="budget-calculator.html">Budget Calculator</a>.<br>
+    See how freelance income could cover rent with the <a href="freelance-rate.html">Freelance Rate Calculator</a>.
+  </p>
+</section>
+
+
+  </main>
+
+  <script src="js/rent.js"></script>
+</body>
+</html>

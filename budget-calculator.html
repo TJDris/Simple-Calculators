@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Budget Calculator | Simple Calculators</title>
+  <meta name="description" content="Plan your monthly budget and calculate how much you can save.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Simple Calculators</a>
+     <div class="nav-links">
+  <a href="salary-to-hourly.html">Salary</a>
+  <a href="freelance-rate.html">Freelance</a>
+  <a href="rent-split.html">Rent</a>
+  <a href="budget-calculator.html">Budget</a>
+  <a href="basic-calculator.html">Basic</a>
+</div>
+    </div>
+  </nav>
+
+  <header class="site-header">
+    <h1>Budget Calculator</h1>
+    <p>Plan your monthly income and expenses</p>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <label>
+        Monthly Income ($)
+        <input type="number" id="income">
+      </label>
+
+      <label>
+        Monthly Expenses ($)
+        <input type="number" id="expenses">
+      </label>
+
+      <button onclick="calculateBudget()">Calculate</button>
+
+      <h2 id="result"></h2>
+    </section>
+
+      <section class="info">
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>How is savings calculated?</h3>
+  <p>We subtract total expenses from income to estimate monthly savings.</p>
+
+  <h3>Can I adjust for taxes?</h3>
+  <p>Yes, include taxes in your expenses to get accurate savings.</p>
+
+  <h3>Other useful tools:</h3>
+  <p>
+    Use the <a href="salary-to-hourly.html">Salary to Hourly Calculator</a> to check income.<br>
+    Calculate your rent split with the <a href="rent-split.html">Rent Split Calculator</a>.
+  </p>
+</section>
+
+
+  </main>
+
+  <script src="js/budget.js"></script>
+</body>
+</html>

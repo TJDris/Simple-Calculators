@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <head>
+  <meta charset="UTF-8">
+  <title>Freelance Rate Calculator | Simple Calculators</title>
+  <meta name="description" content="Calculate your ideal freelance hourly rate based on income goals and billable hours.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="index.html" class="logo">Simple Calculators</a>
+    <div class="nav-links">
+  <a href="salary-to-hourly.html">Salary</a>
+  <a href="freelance-rate.html">Freelance</a>
+  <a href="rent-split.html">Rent</a>
+  <a href="budget-calculator.html">Budget</a>
+  <a href="basic-calculator.html">Basic</a>
+</div>
+</nav>
+
+
+  <header class="site-header">
+    <h1>Freelance Rate Calculator</h1>
+    <p>Find out how much you should charge per hour</p>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <label>
+        Desired Annual Income ($)
+        <input type="number" id="income" placeholder="e.g. 80000">
+      </label>
+
+      <label>
+        Billable Hours per Week
+        <input type="number" id="hours" value="30">
+      </label>
+
+      <label>
+        Weeks per Year
+        <input type="number" id="weeks" value="48">
+      </label>
+
+      <button onclick="calculateFreelanceRate()">Calculate</button>
+
+      <h2 id="result"></h2>
+    </section>
+
+    <section class="info">
+      <h3>Why billable hours matter</h3>
+      <p>
+        Freelancers don’t get paid for every hour worked. This calculator
+        assumes only your billable hours are income-generating.
+      </p>
+    </section>
+
+      <section class="info">
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>How do I calculate my hourly rate?</h3>
+  <p>Divide your desired annual income by billable hours per year.</p>
+
+  <h3>Can I adjust for taxes?</h3>
+  <p>Yes. Enter tax rate for a real take-home rate.</p>
+
+  <h3>Other useful tools:</h3>
+  <p>
+    Convert salary to hourly with the <a href="salary-to-hourly.html">Salary to Hourly Calculator</a>.<br>
+    Manage your expenses with the <a href="budget-calculator.html">Budget Calculator</a>.
+  </p>
+</section>
+
+  </main>
+
+  <script src="js/freelance.js"></script>
+</body>
+</html>
